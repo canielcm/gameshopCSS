@@ -1,0 +1,39 @@
+.cardcontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    margin: 5% 10% 5% 10%;
+}
+
+.card img{
+    width: 100%;
+}
+
+
+@media (max-width: 768px){
+    .cardcontainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+
+@media (max-width: 570px){
+    .cardcontainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+@media (max-width: 410px){
+    .cardcontainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card{
+        margin: 3% 7% 3% 7%; 
+    }
+}
+

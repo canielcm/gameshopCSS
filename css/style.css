@@ -1,0 +1,456 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    color: rgb(187, 211, 255);
+}
+
+body{
+    background-color: #011126;
+}
+
+section{
+ margin: 2%;   
+}
+
+@media (max-width: 330px){
+    section{
+        margin: 0%;
+    }
+} 
+/************************************************NAVBAR*****************************************************/
+#logo{
+    width: 7rem;
+}
+
+.navbar {
+    background-color:#011C40;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0px 2px 10px 5px #050311;
+}
+
+.navList{
+    list-style-type: none;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.navList li{
+  padding: 4% 7% 2% 7%;
+}
+
+.navList li a{
+    color: #5D8AA6;
+    text-decoration: none;
+}
+
+.navList li:hover{
+    color: white;
+    background-color: #074973;
+    border-bottom: solid #e00025;
+    border-width: 6px;
+}
+@media (max-width: 450px){
+    .containerul{
+        width: 100%;
+    }
+    .navList {
+        background-color:#011C40;
+        position: relative;
+        display: block;
+    }
+    .navList li{
+      color:#5D8AA6; 
+      padding: 2% 3% 1% 3%;
+    }
+     
+    .navList li a:hover{
+
+        border-width: 5px;
+    }
+    
+    #logo{
+        width: 5rem;
+    }
+} 
+
+@media (min-width: 451px){
+     
+    .navList li{
+      padding: 4% 7% 2% 7%;
+      
+    }
+    .navList li:hover{
+        
+        border-width: 5px;
+    }
+    #logo{
+        width: 7rem;
+    }
+}
+
+
+.cataloguenv li a {
+    display: block;
+    color: #5D8AA6;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.cataloguenv ul{
+    margin: 1% 0 1% 0;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    background-color: #030e1d;
+    border-left: solid #e00025;
+  }
+  
+.cataloguenv li a:hover{
+    color: white;
+    background-color: #074973;
+    border-bottom: solid #e00025;
+    border-width: 6px;
+  }
+
+/*************************************************COUNTAINERS AND CARDS*****************************************************/
+.cataloguecontainer{
+    margin: 1%;
+}
+.gendergame{
+    color: rgb(89, 178, 255);
+}
+.container{
+    padding: 0 0% 2% 0%;
+    margin: 1%;
+    background-color:#011640;
+    border-radius: 2rem;
+    border: solid #70dcfd;
+}
+.infogame{
+    border-radius: 2rem 2rem 0 0;
+}
+
+.infogame h3{
+    border-radius: 2rem 2rem 0 0;
+    padding: 1%;
+    background-color: rgb(6, 2, 34);
+    text-shadow: 0 0 2px #3cd0fd;
+}
+
+
+.infogame p{
+    padding: 1% 2.5% 2% 2.5%;
+    color: #458088;
+    
+}
+
+.card img{
+    border-radius: 0.7rem;
+}
+
+.card img:hover{
+    filter: brightness(115%);
+}
+
+.buttoncontainer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #010c1b;
+    border-radius: 1rem;
+}
+
+.buttoncontainer span{
+    margin: 0.5rem;
+    color: cornsilk;
+}
+
+.gotweekcontainer{
+    background-color: #010c1b;
+    border-radius: 2rem;
+}
+
+.gotweekText h4{
+    margin-bottom: 1%;
+}
+
+#gotweek{
+    width:100%;
+    border-radius: 2rem;
+}
+
+@media (min-width: 1160px){
+    .gotweekcontainer{
+        margin-top: 1%;
+        display: flex;
+    }
+    .gotweekText{
+        width: 30%;
+        padding: 1%;
+    }
+}
+
+
+/*************************************************FOOTER*****************************************************/
+footer{
+    background-color: #193047;
+    border-top: solid #1abc9c;
+    display: flex;
+}
+.social{
+    padding:  1% 2% 2% 2%;
+}
+@media (min-width: 570px){
+    .social{
+        width: 50%;
+    } 
+}
+
+.smediacontainer{
+    margin: 2% 0 2% 0;
+    padding: 2% 2% 4% 2%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid darkcyan;
+}
+.smediacontainer a{
+    margin:2% 2% 2% 0%;
+}
+
+.smediacontainer a img{
+    width: 3rem;
+    background-color: cyan;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    border-radius: 50%;
+}
+
+.smediacontainer a img:hover{
+    background: rgb(247, 185, 255);
+    border: solid rgb(247, 185, 255);
+    box-shadow: 0px 2px 10px 5px #fd3cf4;
+}
+.inffooter{
+    padding:  1% 2% 2% 2%;
+}
+
+.mydata{
+    width: 100%;
+    margin: 2rem 2rem 0rem 0rem;
+}
+
+.inffooter div{
+    margin: 1rem 0 1rem 0;
+}
+
+@media (max-width: 570px){
+    footer div div p{
+        font-size: 15px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .social{
+        border-bottom: solid darkcyan;
+    }
+    
+    
+}
+/*************************************************BUTTONS*****************************************************/
+/*BUY BUTTON*/
+.buttoncontainer input{
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #16a085;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    width: 35%;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 3px 9px #193047;
+    border-radius: 0.5rem;
+}
+
+.buttoncontainer input:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    color: #000;
+  }
+
+.buttoncontainer input:focus { outline:0; }
+
+
+/*************************************************FORM*****************************************************/
+
+
+form{
+    width: 50%;
+    margin: 2% 25% 2% 25%;
+}
+
+form label .input{
+    padding: 1%;
+    font-size: 16px;
+    border-bottom: solid 5px #e00025;
+    color: rgb(34, 35, 61);
+}
+
+::-webkit-input-placeholder { color: rgb(105, 118, 146); }
+
+.select option{
+    color: gray;
+}
+#agreement{
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 15px;
+}
+
+#submitbutton{
+    font-size: 20px;
+    padding: 1%;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #16a085;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 3px 9px #193047;
+    border-radius: 0.5rem;
+    margin: 1% 0% 1% 0%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#submitbutton:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    color: #000;
+  }
+
+#submitbutton:focus { outline:0; }
+
+
+.fullname{
+    display: flex;
+    padding:2% 0 2% 0;
+    justify-content: space-between;
+}
+.fullname label{
+    margin-right: 1%;
+    
+}
+.fullname label input{
+    width: 100%;
+}
+
+.contact{
+    display: flex;
+    padding:2% 0 2% 0;
+    justify-content: space-between;
+}
+
+.contact label{
+    margin-right: 1%;
+}
+
+.contact label input{
+    width: 100%;
+}
+
+.Birthday{
+    display: flex;
+    padding:2% 0 2% 0;
+}
+
+.Birthday label{
+    margin-right: 1%;
+}
+.agreement{
+    padding:2% 0 2% 0;
+}
+
+.countries{
+    padding:2% 0 2% 0;
+}
+
+.gender{
+    padding:2% 0 2% 0;
+}
+
+.important p{
+    color: rgb(97, 118, 156);
+}
+
+
+@media (min-width: 390px){
+    .fullname label{
+        margin-right: 1%;
+        width: 45%;
+    }
+    .contact label{
+        margin-right: 1%;
+        width: 45%;
+    }
+}
+
+@media (max-width: 730px){
+    form{
+        width: 70%;
+        margin: 2% 15% 2% 15%;
+    }
+}
+
+@media (max-width: 525px){
+    form{
+        width: 80%;
+        margin: 2% 10% 2% 10%;
+    }
+}
+
+@media (max-width: 450px){
+    form{
+        width: 94%;
+        margin: 1% 3% 1% 3%;
+    }
+}
+
+@media (max-width: 390px){
+    form{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fullname{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding:2% 0 2% 0;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding:2% 0 2% 0;
+    }
+    .Birthday{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding:2% 0 2% 0;
+    }
+    
+    #country{
+        font-size: 12px;
+    }
+
+}
